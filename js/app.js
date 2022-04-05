@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
       onboarding.stopOnboarding();
       checkOwner(accounts[0]);
     } else {
-      onboardButton.innerText = 'Connect MetaMask!';
+      onboardButton.innerText = 'Display NFT!';
       onboardButton.onclick = async () => {
         await window.ethereum.request({
           method: 'eth_requestAccounts',
