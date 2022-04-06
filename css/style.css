@@ -49,6 +49,7 @@ body {
 header {
   box-shadow: var(--header-shadow);
   position:relative;
+  justify-content: space-between;
 
 
 }
