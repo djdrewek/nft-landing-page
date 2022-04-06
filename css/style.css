@@ -40,7 +40,8 @@ body {
   max-width: 960px;
   margin: 0 auto;
   padding: 1rem 2rem;
-  overflow: hidden;
+ 
+  
 }
 
 /* HEADER */
@@ -48,16 +49,16 @@ body {
 header {
   box-shadow: var(--header-shadow);
   position:relative;
-  overflow: hidden;
+
 
 }
 
 header .container {
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   position:relative;
-  overflow: hidden;
+ 
 }
 
 .menu {
@@ -84,8 +85,7 @@ header .container {
   position: relative;
   text-decoration: none;
   outline: none;
-  max-width: 100%;
-  max-height: auto;
+
 }
 .btn:hover {
   box-shadow: none;
@@ -126,31 +126,6 @@ section {
   width: 70px;
   height: auto;
 }
-.countdown .clock-item .count-number {
-  background: var(--accent-color);
-  color: var(--font-color);
-  font-size: 2rem;
-  font-weight: 700;
-  font-family: var(--font-secondary);
-  padding: 1rem;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  line-height: 1;
-  border-radius: 4px 4px 0 0;
-}
-.countdown .clock-item .count-text {
-  background: var(--btn-bg-color);
-  font-family: var(--font-secondary);
-  font-size: 1.1rem;
-  color: var(--bg-color);
-  padding: 0.5rem 0.7rem;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  line-height: 1;
-  border-radius: 0 0 4px 4px;
-}
 
 .countdown h1 {
   text-shadow: 2px 2px 0 var(--accent-color);
@@ -183,7 +158,7 @@ section {
   .wallet-btn {
     margin-left: 0;
     padding: 1rem;
-    max-width: 8rem;
+    max-width: 6rem;
   }
   .countdown h1 {
     font-size: 2rem;
