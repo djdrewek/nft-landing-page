@@ -29,7 +29,7 @@ body {
   font-family: var(--font-primary);
 }
 
-.header-logo img {
+.logo img {
         max-width: 100%;
         max-height: auto;
     }
@@ -160,6 +160,7 @@ section {
     padding: 1rem;
     max-width: 6rem;
   }
+  
   .countdown h1 {
     font-size: 2rem;
   }
