@@ -33,7 +33,9 @@ window.addEventListener('DOMContentLoaded', () => {
           onboardButton.disabled = true;
           checkOwner(accounts[0]);
         });
+        
       };
+      
     }
   };
 
@@ -44,6 +46,7 @@ window.addEventListener('DOMContentLoaded', () => {
       updateButton();
     });
   }
+  
 });
 
 const checkOwner = async (account) => {
@@ -130,4 +133,5 @@ async function fetchWithRetry(url)  {
     }
     return fetch_retry(url);
   });
+  
 }
