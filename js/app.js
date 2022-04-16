@@ -3,7 +3,7 @@ const TIMEOUT = 1000;
 const COLLECTION_NAME = 'Veriframed';
 let editions = [];
 let dots = 1;
-
+import NFTContainer from './NFTContainer';
 window.addEventListener('DOMContentLoaded', () => {
   const onboarding = new MetaMaskOnboarding();
   const onboardButton = document.getElementById('connectWallet');
@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
       onboardButton.innerText = `✔ ...${accounts[0].slice(-4)}`;
       onboardButton.disabled = true;
       onboarding.stopOnboarding();
-      checkOwner(accounts[0]);
+      checkOwner(accounts[0]);   
     } else {
       onboardButton.innerText = 'Display NFT!';
       onboardButton.onclick = async () => {
@@ -46,7 +46,13 @@ window.addEventListener('DOMContentLoaded', () => {
       updateButton();
     });
   }
+  return(
+    <div classname='text'>
+    <NFTContainer />
+  </div>
+  )
   
+
 });
 
 const checkOwner = async (account) => {
